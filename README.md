@@ -22,3 +22,6 @@ Google app script is a free development environment and essential for our hostin
 4. https://yagisanatode.com/2019/05/11/google-apps-script-get-the-last-row-of-a-data-range-when-other-columns-have-content-like-hidden-formulas-and-check-boxes/
 5. https://www.youtube.com/watch?v=tnek1Rx6MKA
 6. https://www.youtube.com/watch?v=i19EjYZ7qbk
+
+## Final Touchs
+Make sure you invite your bot to yout channel by using this command: /invite @BOT_NAME

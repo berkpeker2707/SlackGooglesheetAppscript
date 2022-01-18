@@ -1,7 +1,7 @@
 //Set up a variable to show when we've sent a message to Slack
 var slackSentText = "Yes";
 //This is hte Slack hook
-var url = "https://hooks.slack.com/services/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";
+var url = "https://hooks.slack.com/services/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";
 
 function getNewInfo() {
   var sheetname = "SlackGooglesheetEKLE"
