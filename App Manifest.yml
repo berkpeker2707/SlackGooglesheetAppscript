@@ -1,55 +1,55 @@
 display_information:
-  name: SendMessagesToGooglesheet
+  name: SlackGooglesheetAppscript
 features:
   app_home:
     home_tab_enabled: true
-    messages_tab_enabled: true
+    messages_tab_enabled: false
     messages_tab_read_only_enabled: false
   bot_user:
-    display_name: slackToGooglesheet
+    display_name: SlackGooglesheetAppscript
     always_online: true
   slash_commands:
     - command: /add
-      url: https://script.google.com/macros/s/AKfycbzOVfxZ9tu4MQm5xxVHEIPEHeO_E79dBOQrprAi0G4GGQP05q3SUKeXB7uPnObMmDCd/exec
+      url: https://script.google.com/macros/s/AKfycbzoRizjFEEEkid1GGC44ifrtgsZGg7FWx_G5IFugV6E60w9FyCdru1pqNhhL0W_qvpQ/exec
       description: Type /add to add product to googlesheet.
       usage_hint: type /add then 'EKLE' or 'IPTAL' then 'product' name
       should_escape: false
     - command: /del
-      url: https://script.google.com/macros/s/AKfycbzOVfxZ9tu4MQm5xxVHEIPEHeO_E79dBOQrprAi0G4GGQP05q3SUKeXB7uPnObMmDCd/exec
+      url: https://script.google.com/macros/s/AKfycbzoRizjFEEEkid1GGC44ifrtgsZGg7FWx_G5IFugV6E60w9FyCdru1pqNhhL0W_qvpQ/exec
       description: Type /del to delete product from googlesheet.
       usage_hint: type /del then 'DEL' then 'product' name
       should_escape: false
     - command: /refresh
-      url: https://script.google.com/macros/s/AKfycbzOVfxZ9tu4MQm5xxVHEIPEHeO_E79dBOQrprAi0G4GGQP05q3SUKeXB7uPnObMmDCd/exec
+      url: https://script.google.com/macros/s/AKfycbzoRizjFEEEkid1GGC44ifrtgsZGg7FWx_G5IFugV6E60w9FyCdru1pqNhhL0W_qvpQ/exec
       description: Type /refresh to manually refreshed completed works.
       usage_hint: type /refresh
       should_escape: false
 oauth_config:
   scopes:
     bot:
-      - commands
-      - chat:write
-      - chat:write.public
-      - emoji:read
-      - reactions:read
-      - reactions:write
-      - incoming-webhook
+      - channels:history
       - channels:join
       - channels:read
+      - chat:write
+      - chat:write.public
+      - commands
+      - emoji:read
+      - im:history
+      - groups:history
+      - incoming-webhook
+      - mpim:history
+      - reactions:read
+      - reactions:write
       - users:read
       - users:read.email
-      - channels:history
-      - groups:history
-      - mpim:history
-      - im:history
 settings:
   event_subscriptions:
-    request_url: https://script.google.com/macros/s/AKfycbzOVfxZ9tu4MQm5xxVHEIPEHeO_E79dBOQrprAi0G4GGQP05q3SUKeXB7uPnObMmDCd/exec
+    request_url: https://script.google.com/macros/s/AKfycbzoRizjFEEEkid1GGC44ifrtgsZGg7FWx_G5IFugV6E60w9FyCdru1pqNhhL0W_qvpQ/exec
     bot_events:
       - app_home_opened
   interactivity:
     is_enabled: true
-    request_url: https://script.google.com/macros/s/AKfycbzOVfxZ9tu4MQm5xxVHEIPEHeO_E79dBOQrprAi0G4GGQP05q3SUKeXB7uPnObMmDCd/exec
+    request_url: https://script.google.com/macros/s/AKfycbzoRizjFEEEkid1GGC44ifrtgsZGg7FWx_G5IFugV6E60w9FyCdru1pqNhhL0W_qvpQ/exec
   org_deploy_enabled: false
   socket_mode_enabled: false
   token_rotation_enabled: false
