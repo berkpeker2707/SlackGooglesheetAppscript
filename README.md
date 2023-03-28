@@ -1,5 +1,5 @@
 ## What is this?
-This is a Slack bot, based on Zapier.
+A channel specific bot based on Zapier, takes entered slack messages and save them to specific googlesheet according to prefixes.
 
 ## What is it for?
 By using commands, which can be observed in App Manifest.yml it takes your entered data to googlesheet then sends it back to the specified slack channel. Then it separates it according to the prefixes. Finally it checks whether it got a checked reaction or not. If it does, it deletes it from second and third sheets, but keeps it in the first just in case.
